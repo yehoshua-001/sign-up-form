@@ -211,6 +211,8 @@ main .bottom {
 }
 
 .bottom > div > a {
+    text-decoration: none;
+    cursor: pointer;
     color: #596d48;
     font-weight: 800;
 }
