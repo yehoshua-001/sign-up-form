@@ -66,14 +66,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-    height: 100dvh;
-    width: 100dvw;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
     display: flex;
+    background-color: #f9fafb;
 }
 
 aside {
-    height: inherit;
-    width: 35%;
+    height: 100vh;
+    width: 50%;
     background-image: url(./assets/green-leaf-halie-west-unsplash.jpg);
     background-origin: border-box;
     background-repeat: no-repeat;
@@ -86,7 +88,7 @@ aside {
 
 header {
     display: flex;
-    margin-top: 200px;
+    margin-top: 240px;
 }
 
 div[class="logo"] {
@@ -113,7 +115,102 @@ footer {
     margin-bottom: 15px;
 }
 
-a {
+footer > p > a {
     color: #ffffff;
 }
 
+main {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .top-paragraph {
+    font-size: 1.8rem;
+    font-weight: 800;
+    max-width: 59ch;
+    padding-left: 70px;
+}
+
+.top-paragraph p {
+    margin-bottom: 15px;
+}
+
+main .form {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    padding: 15px 0 15px 70px;
+    color: #1f2937;
+    background-color: #ffffff;   
+    box-shadow: 0 5px 10px 2px rgb(0 0 0 / 0.1);
+}
+
+form > p {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+form div {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+input {
+    width: 280px;
+    border: 1px solid #e5e7eb;
+    border-radius: 5px;
+    padding: 5px 0 5px 10px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #0466c8;
+    box-shadow: 3px 2px 8px 1px rgb(0 0 0 / 0.2);
+}
+
+input[id="first_name"],
+input[id="email"],
+input[id="pwd"] {
+    margin-right: 100px;
+}
+
+input[id="pwd"]:user-invalid,
+input[id="confirm_pwd"]:user-invalid {
+    outline: none;
+    border: 1px solid #ef233c;
+}
+
+main .bottom {
+    padding-left: 70px;
+}
+
+.bottom button {
+    margin-block: 20px;
+    width: 230px;
+    padding: 10px;
+    background-color: #596d48;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 3px 2px 8px 1px rgb(0 0 0 / 0.2);
+    font-weight: 800;
+}
+
+.bottom > div > a {
+    color: #596d48;
+    font-weight: 800;
+}
