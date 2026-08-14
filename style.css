@@ -208,6 +208,12 @@ main .bottom {
     border-radius: 8px;
     box-shadow: 3px 2px 8px 1px rgb(0 0 0 / 0.2);
     font-weight: 800;
+    transition: transform 0.2s ease-in-out;
+}
+
+.bottom button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .bottom > div > a {
